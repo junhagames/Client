@@ -1,1 +1,0 @@
-net_cmd_resolve();

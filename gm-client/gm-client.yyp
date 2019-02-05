@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "8f4e6867-4d00-437c-9503-13cc09cd3d4b",
+            "Value": {
+                "id": "7ab0f4c2-82ab-4988-80b6-1336e94c7c5c",
+                "resourcePath": "scripts\\handle_connected\\handle_connected.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "92b6562e-3644-4693-8efe-63087190c0d5",
             "Value": {
                 "id": "41269610-21a7-4ffd-994b-6fdb143d4912",
@@ -183,6 +191,22 @@
             }
         },
         {
+            "Key": "a9738813-6e85-4975-a5df-e8a60c09ce55",
+            "Value": {
+                "id": "29105e34-9b87-464e-a89a-05487f39fa00",
+                "resourcePath": "views\\a9738813-6e85-4975-a5df-e8a60c09ce55.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a9d146a0-7029-44c8-90f1-212a1fe83b88",
+            "Value": {
+                "id": "424154e1-88bf-474e-b1f4-fcee6546f9c4",
+                "resourcePath": "objects\\obj_network_controller\\obj_network_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c6784127-ae33-44af-9b68-cb8455808e34",
             "Value": {
                 "id": "f0c3d197-0320-4001-8b33-230e017958ae",
@@ -212,6 +236,14 @@
                 "id": "716e3900-9681-4b00-8421-cb52be030aaa",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d3f5a16c-635d-4ba6-90df-28439b1295c1",
+            "Value": {
+                "id": "9a328249-675f-4116-b1cc-ca0432fb4b38",
+                "resourcePath": "scripts\\handle_chat\\handle_chat.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -264,7 +296,16 @@
         }
     ],
     "script_order": [
-        
+        "8f4e6867-4d00-437c-9503-13cc09cd3d4b",
+        "d3f5a16c-635d-4ba6-90df-28439b1295c1",
+        "c8ffc1b0-5aed-4ec8-87db-36c92a954aea",
+        "d71c9121-0f08-4242-8fea-c377de3ca8ce",
+        "029b3f07-7a75-4efd-b8ab-20ec4e586116",
+        "3e78b600-b4b6-4565-9cf6-20469e3ba848",
+        "a711c96c-7bcf-4f9e-abc4-bb682deab985",
+        "3b4d872c-1506-42db-a1c9-39d0181fc662",
+        "a659d141-e695-4dd2-b68a-94eb629b69a5",
+        "7bcc8159-ba31-411f-a458-15d55a56b280"
     ],
     "tutorial": ""
 }

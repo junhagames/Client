@@ -1,5 +1,5 @@
-/// @desc Reads data from async_load and returns a map of the data sent from the server.
-/// Note: This is for internal use in Patchwire
+/// @desc 서버에서 보낸 데이터를 반환하고, 서버와의 연결을 관리합니다.
+/// Note: 이 스크립트를 건드리지 마세요!
 
 var netResponseType = ds_map_find_value(async_load, "type");
 
@@ -11,18 +11,21 @@ switch (netResponseType) {
         var netResponseMap = json_decode(netResponseData);
         buffer_delete(netResponseBuffer);
         return netResponseMap;
+		
     case network_type_connect:
     case network_type_non_blocking_connect:
         global.patchwire_connectedStatus = async_load[? "succeeded"];
     
         if (async_load[? "succeeded"]) {
-            return NetEvent.Connect;
+            return NetEvent.CONNECT;
         }
-        return NetEvent.ConnectFail;
+        return NetEvent.CONNECTFAIL;
+		
     case network_type_disconnect:
         global.patchwire_connectedStatus = false;
-        return NetEvent.Disconnect;
+        return NetEvent.DISCONNECT;
+		
     default:
-        return NetEvent.Unknown;   
+        return NetEvent.UNKNOW;   
 }
 

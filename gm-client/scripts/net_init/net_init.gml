@@ -1,22 +1,7 @@
 /// @desc 네트워크 설정을 초기화힙니다.
-/// @param {Real} 서버연결제한시간	서버에 연결하는 최대 제한시간을 설정합니다.	기본값: 4000
-/// @param {Boolean} 논블로킹		논블로킹을 사용할지 설정합니다.				기본값: true
 
 var timeout = 4000;
 var blocking = 0;
-
-if (argument_count > 0) {
-    timeout = argument0;
-}
-
-if (argument_count > 1) {
-    if (argument1) {
-        blocking = 0;
-    }
-	else {
-        blocking = 1;
-    }
-}
 
 network_set_config(network_config_connect_timeout, timeout);
 network_set_config(network_config_use_non_blocking_socket, blocking);

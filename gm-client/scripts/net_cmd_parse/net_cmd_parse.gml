@@ -1,5 +1,4 @@
 /// @desc 서버에서 보낸 데이터를 반환하고, 서버와의 연결을 관리합니다.
-/// Note: 이 스크립트를 건드리지 마세요!
 
 var netResponseType = ds_map_find_value(async_load, "type");
 
